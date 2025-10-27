@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.env
+technical-documentation-page.code-workspace

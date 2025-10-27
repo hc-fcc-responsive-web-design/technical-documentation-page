@@ -1,0 +1,869 @@
+/*=====================*/
+/* GLOBAL              */
+/*=====================*/
+
+/*---------------*/
+/* HTML Elements */
+/*---------------*/
+
+a {
+  /* Positioning */
+  /* Display and Box model */
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  /* Typography */
+  text-decoration: none;
+  /* Other */
+}
+
+abbr {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  -moz-font-feature-settings:"c2sc" 1, "onum" 1;
+	-ms-font-feature-settings:"c2sc" 1, "onum" 1;
+	-o-font-feature-settings:"c2sc" 1, "onum" 1;
+	-webkit-font-feature-settings:"c2sc" 1, "onum" 1;
+  font-feature-settings: "c2sc" 1, "onum" 1;
+  font-style: normal;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  /* Other */
+}
+
+blockquote {
+  /* Positioning */
+  /* Display and Box model */
+  display: flex;
+  align-items: baseline;
+  margin: 1.375em 0 1.375em 0;
+  /* Typography */
+  color: var(--color-dark-gold);
+  font-style: italic;
+  /* Other */
+}
+
+blockquote p {
+  /* Positioning */
+  /* Display and Box model */
+  margin-top: 0;
+  /* Typography */
+  /* Other */
+}
+
+blockquote p + p {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  text-indent: 1.5em;
+  /* Other */
+}
+
+blockquote em {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  font-style: normal;
+  /* Other */
+}
+
+blockquote:last-child {
+  /* Positioning */
+  /* Display and Box model */
+  margin-bottom: 0;
+  /* Typography */
+  /* Other */
+}
+
+body {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 0;
+  padding: 0;
+  /* Typography */
+  font-size: 19px;
+  font-family: Cambria, Georgia, serif;
+  font-feature-settings: "onum" 1;
+  line-height: 1.5;
+  text-rendering: optimizelegibility;
+  /* Other */
+  --color-beige: rgb(255, 248, 229);
+  --color-dark-burgundy: rgb(64, 3, 0);
+  --color-burgundy: rgb(149, 36, 0);
+  --color-dark-gray: rgb(51, 51, 51);
+  --color-light-gold: rgb(216, 202, 162);
+  --color-dark-gold: rgb(131, 107, 28);
+}
+
+code {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  font-family:  Consolas, Menlo, monospace;
+  font-size: 0.842em;
+  font-size-adjust: 0.457;
+  /* Other */
+}
+
+figure {
+  /* Positioning */
+  /* Display and Box model */
+  border-color:  var(--color-light-gold);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 1.5em 0 0 0;
+  padding: 1em;
+  /* Typography */
+  /* Other */
+  background: white;
+}
+
+h1 {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 0;
+  /* Typography */
+  font-size: 2.0625em;
+  font-weight: 500;
+  line-height: 1.66667em;
+  /* Other */
+}
+
+h2 {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 1.5em 0 1.5em 0;
+  /* Typography */
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.5em;
+  /* Other */
+}
+
+h3 {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 1.15789em 0 1.15789em 0;
+  /* Typography */
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.1875em;
+  /* Other */
+}
+
+h4 {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 0;
+  /* Typography */
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.375em;
+  /* Other */
+}
+
+ol {
+  /* Positioning */
+  /* Display and Box model */
+  padding: 0;
+  /* Typography */
+  list-style: none;
+  /* Other */
+}
+
+p {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 1.5em 0 0 0;
+  /* Typography */
+  font-size: 1em;
+  line-height: 1.5;
+  word-spacing: 0.25em;
+  /* Other */
+}
+
+p code {
+  /* Positioning */
+  /* Display and Box model */
+  display: inline;
+  border-color: #d8caa2;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 4.7px;
+  /* Typography */
+  /* Other */
+  background: white;
+}
+
+pre {
+  /* Positioning */
+  /* Display and Box model */
+  border-color:  var(--color-light-gold);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 1.5em 0 0 0;
+  width: 100%;
+  /* Typography */
+  /* Other */
+  background: white;
+}
+
+pre[data-lang]::before {
+  /* Positioning */
+  /* Display and Box model */
+  border-color:  var(--color-light-gold);
+  border-style: solid;
+  border-width: 1px;
+  content: attr(data-lang);
+  display: block;
+  height: 2rem;
+  padding: 0 1rem;
+  /* Typography */
+  color: var(--color-dark-gold);
+  font-family: Cambria, Georgia, serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  line-height: 2rem;
+  /* Other */
+  background: var(--color-light-gold);
+}
+
+pre code {
+  /* Positioning */
+  /* Display and Box model */
+  display: block;
+  overflow-x: auto;
+  overflow-wrap: normal;
+  padding: 1rem;
+  /* Typography */
+  /* Other */
+}
+
+ul {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 0;
+  padding: 0;
+  /* Typography */
+  list-style: none;
+  /* Other */
+}
+
+/*---------------*/
+/* General       */
+/*---------------*/
+
+.italic {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  font-style: italic;
+  /* Other */
+}
+
+/*=====================*/
+/* GRID & CONTAINER    */
+/*=====================*/
+
+#container {
+  /* Positioning */
+  /* Display and Box model */
+  display: grid;
+  grid-template-columns: [nav] 31.57894736842105em [main] minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas: "nav main"
+                       "nav footer";
+  width: 100%;
+  /* Typography */
+  /* Other */
+  background: var(--color-beige);
+}
+
+#navbar {
+  /* Positioning */
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  /* Display and Box model */
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  grid-area: nav;
+  height: 100%;
+  max-width: 31.57894736842105em;
+  padding: 6rem;
+  /* Typography */
+  color: white;
+  /* Other */
+  overflow-y: auto;
+  background: var(--color-dark-burgundy);
+  background-image: linear-gradient(black, var(--color-dark-burgundy));
+}
+
+#main-doc {
+  /* Positioning */
+  /* Display and Box model */
+  grid-area: main;
+  max-width: 66em;
+  padding: 0 6rem 6rem 6rem;
+  /* Typography */
+  /* Other */
+}
+
+#footer {
+  /* Positioning */
+  /* Display and Box model */
+  grid-area: footer;
+  padding: 0 6rem 1em;
+  /* Typography */
+  /* Other */
+}
+
+/*=====================*/
+/* NAVBAR              */
+/*=====================*/
+
+/*---------------*/
+/* Title         */
+/*---------------*/
+
+#title-left {
+  /* Positioning */
+  /* Display and Box model */
+  margin-bottom: 4em;
+  width: auto;
+  /* Typography */
+  /* Other */
+}
+
+#title-top {
+  /* Positioning */
+  /* Display and Box model */
+  display: none;
+  margin-bottom: 4em;
+  /* Typography */
+  /* Other */
+}
+
+#ts {
+  /* Positioning */
+  left: -1.11em;
+  position: relative;
+  /* Display and Box model */
+  /* Typography */
+  /* Other */
+}
+
+.of {
+  /* Positioning */
+  left: -0.3em;
+  position: static;
+  /* Display and Box model */
+  margin-right: 0.1em;
+  /* Typography */
+  /* Other */
+}
+
+#title-top h2 {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 1em 0;
+  /* Typography */
+  /* Other */
+}
+
+/*---------------*/
+/* Navigation    */
+/*---------------*/
+
+#table-of-contents {
+  /* Positioning */
+  /* Display and Box model */
+  padding: 0;
+  /* Typography */
+  /* Other */
+}
+
+#table-of-contents span {
+  /* Positioning */
+  left: 0;
+  position: absolute;
+  /* Display and Box model */
+  display: block;
+  padding-right: 0.5rem;
+  min-width: 5.5rem;
+  /* Typography */
+  text-align: right;
+  /* Other */
+}
+
+.nav-link {
+  /* Positioning */
+  /* Display and Box model */
+  border-bottom-color: var(--color-dark-gray);
+  /* Typography */
+  color: white;
+  /* Other */
+}
+
+.nav-link:hover {
+  /* Positioning */
+  /* Display and Box model */
+  border-bottom-color: white;
+  /* Typography */
+  /* Other */
+}
+
+#navbar ol li:last-child {
+  /* Positioning */
+  /* Display and Box model */
+  margin-bottom: 2.5rem;
+  /* Typography */
+  /* Other */
+}
+
+/*=====================*/
+/* MAIN                */
+/*=====================*/
+
+/*---------------*/
+/* General       */
+/*---------------*/
+
+a {
+  /* Positioning */
+  /* Display and Box model */
+  border-bottom-color: lightgray;
+  /* Typography */
+  color: var(--color-burgundy);
+  /* Other */
+}
+
+a:hover {
+  /* Positioning */
+  /* Display and Box model */
+  border-bottom-color: var(--color-burgundy);
+  /* Typography */
+  /* Other */
+}
+
+.ext-link::after {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  font-family: Wingdings;
+  content: "\2197";
+  /* Other */
+}
+
+#main-doc header {
+  /* Positioning */
+  /* Display and Box model */
+  padding-top: 6rem;
+  /* Typography */
+  /* Other */
+}
+
+#main-doc header h2{
+  /* Positioning */
+  /* Display and Box model */
+  align-items: baseline;
+  display: flex;
+  margin: 0 0 1.5em -6rem;
+  /* Typography */
+  /* Other */
+}
+
+#main-doc header span {
+  /* Positioning */
+  z-index: 0;
+  /* Display and Box model */
+  padding-right: 0.5rem;
+  min-width: 5.5rem;
+  /* Typography */
+  text-align: right;
+  /* Other */
+}
+
+.bracket {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  font-style: normal;
+  /* Other */
+}
+
+.kerning {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  letter-spacing: -0.1em;
+  /* Other */
+}
+
+.quote {
+  /* Positioning */
+  margin-left: -6rem;
+  min-width: 6rem;
+  text-align: right;
+  z-index: 0;
+  /* Display and Box model */
+  /* Typography */
+  text-align: right;
+  /* Other */
+}
+
+.whitespace {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  /* Other */
+  background-color: var(--color-dark-gold);
+}
+
+.citation {
+  /* Positioning */
+  /* Display and Box model */
+  margin-top: 0;
+  /* Typography */
+  text-indent: -1.5em;
+  /* Other */
+}
+
+/*---------------*/
+/* Figure        */
+/*---------------*/
+
+#example-1 {
+  /* Positioning */
+  /* Display and Box model */
+  border: 1px solid black;
+  height: 1em;
+  width: 1em;
+  /* Typography */
+  color: var(--color-dark-gold);
+  font-size: 12px;
+  line-height: 1em;
+  text-align: center;
+  /* Other */
+}
+
+#example-2 {
+  /* Positioning */
+  /* Display and Box model */
+  border: 1px solid black;
+  height: 1em;
+  margin-top: 0.3em;
+  width: 1em;
+  /* Typography */
+  color: var(--color-dark-gold);
+  font-size: 60px;
+  line-height: 1em;
+  text-align: center;
+  /* Other */
+}
+
+#example-3 p {
+  /* Positioning */
+  /* Display and Box model */
+  margin-top: 0;
+  /* Typography */
+  font-family: impact, sans-serif;
+  font-size: 200%;
+  letter-spacing: 0.1em;
+  /* Other */
+}
+
+#example-4 p {
+  /* Positioning */
+  /* Display and Box model */
+  margin-top: 0;
+  /* Typography */
+  font-size: 200%;
+  /* Other */
+}
+
+#example-5 p {
+  /* Positioning */
+  /* Display and Box model */
+  margin-top: 0;
+  /* Typography */
+  font-size: 200%;
+  letter-spacing: -0.1em;
+  /* Other */
+}
+
+#example-6 {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 0 3em 0 auto;
+  /* Typography */
+  /* Other */
+}
+
+#example-6 th {
+  /* Positioning */
+  /* Display and Box model */
+  padding: 0;
+  /* Typography */
+  font-weight: normal;
+  text-align: right;
+  /* Other */
+}
+
+#example-6 td {
+  /* Positioning */
+  /* Display and Box model */
+  padding: 0 0 0 0.5em;
+  /* Typography */
+  font-style: italic;
+  text-align: right;
+  /* Other */
+}
+
+#example-7 {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 0 auto;
+  /* Typography */
+  /* Other */
+}
+
+#example-7 th {
+  /* Positioning */
+  /* Display and Box model */
+  padding: 0 0.5em 0 0;
+  /* Typography */
+  font-weight: normal;
+  text-align: right;
+  /* Other */
+}
+
+#example-7 td:before {
+  /* Positioning */
+  /* Display and Box model */
+  padding-right: 0.5em;
+  /* Typography */
+  content: "\2022";
+  /* Other */
+}
+
+#example-7 td {
+  /* Positioning */
+  /* Display and Box model */
+  padding: 0;
+  /* Typography */
+  font-style: italic;
+  text-align: left;
+  /* Other */
+}
+
+#example-8 {
+  /* Positioning */
+  /* Display and Box model */
+  display: flex;
+  flex-direction: row;
+  /* Typography */
+  /* Other */
+}
+
+#example-8 p {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 0;
+  /* Typography */
+  font-size: 0.631578947368421em;
+  line-height: 1.5;
+  /* Other */
+}
+
+#example-8 .sidenote {
+  /* Positioning */
+  /* Display and Box model */
+  margin-right: 1.5em;
+  /* Typography */
+  font-size: 0.5263157894736842em;
+  line-height: 1.8;
+  /* Other */
+}
+
+#example-9 p {
+  /* Positioning */
+  /* Display and Box model */
+  margin-top: 0;
+  margin-left: 1.5em;
+  /* Typography */
+  /* Other */
+}
+
+#example-9 p + p {
+    /* Positioning */
+  /* Display and Box model */
+  margin-top: 0;
+  /* Typography */
+  text-indent: -1.5em;
+  /* Other */
+}
+
+#example-10 p {
+  /* Positioning */
+  /* Display and Box model */
+  margin-top: 0;
+  /* Typography */
+  /* Other */
+}
+
+#example-10 p + p:before {
+  /* Positioning */
+  /* Display and Box model */
+  margin-top: 0;
+  padding-right: 0.4em;
+  /* Typography */
+  content: "\2767";
+  /* Other */
+}
+#example-11 p {
+  /* Positioning */
+  /* Display and Box model */
+  display: inline;
+  margin-top: 0;
+  /* Typography */
+  /* Other */
+}
+
+#example-11 p + p:before { 
+  /* Positioning */
+  /* Display and Box model */
+  padding-right: 0.1em;
+  padding-left: 0.4em;
+  /* Typography */
+  content: "\2761"; 
+  /* Other */
+}
+
+#example-12 p {
+  /* Positioning */
+  /* Display and Box model */
+   margin-top: 0;
+  /* Typography */
+  /* Other */
+}
+
+#example-12 pre {
+  /* Positioning */
+  /* Display and Box model */
+  border: none;
+  margin: 0;
+  padding: 0;
+  /* Typography */
+  text-align: center;
+  /* Other */
+    /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  /* Other */
+  background: none;
+}
+
+#example-12 pre span {
+  /* Positioning */
+  /* Display and Box model */
+  display: inline-block;
+  /* Typography */
+  font-family: Cambria, Georgia, serif;
+  text-align: left;
+  /* Other */
+  white-space: pre;
+}
+
+#example-13 p {
+  /* Positioning */
+  /* Display and Box model */
+  margin-top: 0em;
+  margin-left: 0.5em;
+  /* Typography */
+  font-size: 1.5em;
+  line-height: 0.85;
+  text-indent: -0.5em;
+  /* Other */
+}
+
+#example-14 p {
+  /* Positioning */
+  /* Display and Box model */
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 0em;
+  /* Typography */
+  line-height: 3;
+  text-align: center;
+  /* Other */
+}
+
+/*=====================*/
+/* MEDIA QUERIES       */
+/*=====================*/
+
+@media only screen and (max-width: 1200px)  {
+  
+  /*---------------*/
+  /* Container     */
+  /*---------------*/
+  
+  #container {
+  /* Positioning */
+  /* Display and Box model */
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: [nav] 100px [main] 1fr [footer] 6em;
+  grid-template-areas:
+    "nav" 
+    "main"
+    "footer";
+  width: 100%;
+  /* Typography */
+  /* Other */
+  }
+  
+  /*---------------*/
+  /* Navbar        */
+  /*---------------*/
+  
+  #navbar {
+  /* Positioning */
+  /* Display and Box model */
+  grid-area: nav;
+  height: 100px;
+  max-width: initial;
+  padding: 0 6rem;
+  width: 100%;
+  /* Typography */
+  /* Other */
+  }
+  
+  /*---------------*/
+  /* Title         */
+  /*---------------*/
+  
+  #title-left {
+  /* Positioning */
+  /* Display and Box model */
+  display: none;
+  /* Typography */
+  /* Other */
+  }
+  
+  #title-top {
+  /* Positioning */
+  /* Display and Box model */
+  display: block;
+  /* Typography */
+  /* Other */
+  }
+}
